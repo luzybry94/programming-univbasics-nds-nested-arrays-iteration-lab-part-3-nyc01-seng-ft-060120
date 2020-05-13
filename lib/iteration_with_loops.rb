@@ -6,5 +6,6 @@ def join_nested_strings(src)
     str = ""
     inner_index = 0
     while inner_index < src[outer_index].length do
-      if src[outer_index][inner_index].
+      if src[outer_index][inner_index].class == string
+        str = "#{src[outer_index][inner_index]}"
 end
