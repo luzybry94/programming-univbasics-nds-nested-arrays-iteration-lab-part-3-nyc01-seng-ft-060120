@@ -7,5 +7,10 @@ def join_nested_strings(src)
     inner_index = 0
     while inner_index < src[outer_index].length do
       if src[outer_index][inner_index].class == string
-        str = "#{src[outer_index][inner_index]}"
+        str += src[outer_index][inner_index]} + " "
+      end
+      inner_index += 1
+    end
+    str
+  end
 end
